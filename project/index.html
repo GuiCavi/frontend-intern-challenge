@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Encurtador de links - CHAORDiC</title>
+  <link rel="stylesheet" href="assets/css/styles/styles.css"/>
+</head>
+<body><div style="height: 0; width: 0; position: absolute; visibility: hidden">
+  <!-- inject:svg --><svg xmlns="http://www.w3.org/2000/svg"><symbol id="close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></symbol></svg><!-- endinject -->
+</div>
+  <header id="main-header">
+    <h1>CHAORDiC Encurtador de URLS</h1>
+  </header>
+  <section id="main-section">
+    <div class="container">
+      <h2>Encurte seus links.</h2>
+      <p>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
+      <form class="form-short">
+        <div class="form-group">
+          <input type="url" placeholder="Cole seu link aqui" name="url" id="url" value="http://bing.com" data-tooltip="#empty-tooltip"/>
+          <div id="empty-tooltip" class="tooltip bottom">Insira uma URL válida</div>
+          <svg viewBox="0 0 24 24" id="clear-input">
+            <use xlink:href="#close"></use>
+          </svg>
+        </div>
+        <div class="button-group">
+          <button id="short-link" data-tooltip="#copied-tooltip"><span>Encurtar</span></button>
+          <div id="copied-tooltip" class="tooltip bottom">Copiado</div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section id="topfive-section">
+    <div class="container">
+      <h2>Top 5</h2>
+      <ul id="topfive-list"></ul>
+    </div>
+  </section>
+  <section id="countlinks-section">
+    <div class="container">
+      <h2>Hits</h2><span class="counter"></span><small>Cliques em links</small>
+    </div>
+  </section>
+  <footer id="main-footer">
+    <div class="container"><span class="brand">chr.dc</span>
+      <ul id="social-list">
+        <li><a href="#"><img src="./assets/images/icon-facebook.png" alt="Visite nosso facebook"/></a></li>
+        <li><a href="#"><img src="./assets/images/icon-twitter.png" alt="Tweet-nos alguma coisa"/></a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./assets/js/Utils.js"></script>
+  <script src="./assets/js/scripts.js"></script>
+</body>

@@ -1,0 +1,15 @@
+section#main-section
+	.container
+		h2 Encurte seus links.
+		p Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.
+
+		form.form-short
+			.form-group
+				input(type="url" placeholder="Cole seu link aqui" name="url" id="url" value="http://bing.com" data-tooltip="#empty-tooltip")
+				.tooltip.bottom#empty-tooltip Insira uma URL válida
+				svg(viewBox="0 0 24 24")#clear-input
+					use(xlink:href="#close")
+			.button-group
+				button#short-link(data-tooltip="#copied-tooltip")
+					span Encurtar
+				.tooltip.bottom#copied-tooltip Copiado

@@ -1,0 +1,82 @@
+#main-section
+	background:
+		image: url(../../images/background-home.jpg)
+		size: cover
+		position: center
+	padding: 150px 0
+	color: #fff
+	text-align: center
+	h2
+		font-size: 36px
+		margin-bottom: 20px
+	p
+		font-size: 16px
+		line-height: 1.2
+		margin-bottom: 50px
+
+.form-short
+	display: flex
+	
+	@media(max-width: 640px)
+		flex-direction: column
+
+	.form-group
+		flex: 1
+		margin-right: 10px
+		position: relative
+		
+	input
+		border: none
+		background-image: none
+		background-color: transparent
+		outline: 0
+		border-bottom: 2px solid $ch-orange
+		color: $ch-orange
+		padding: 10px
+		font-size: 16px
+		font-weight: bold
+		width: 100%
+		&::placeholder
+			color: $ch-orange
+			font-weight: bold
+		&.shortened
+			color: #fff
+		@media(max-width: 640px)
+			margin: 0
+
+	button
+		width: $button-width
+		height: $button-height
+		line-height: $button-height
+		text-align: center
+		background-color: $ch-orange
+		font-size: 15px
+		text-transform: uppercase
+		border: none
+		color: #fff
+		font-weight: 700
+		cursor: pointer
+		transition: all .1s ease-in-out
+		letter-spacing: 0.5px
+		&:hover
+			background-color: lighten($ch-orange, 5%)
+		span
+			transition: all .3s ease-in-out
+
+		@media(max-width: 640px)
+			width: 100%
+			margin-top: 40px
+
+#clear-input
+	fill: white
+	width: 20px
+	height: 20px
+	position: absolute
+	top: 50%
+	right: 0
+	transform: translateY(-50%)
+	opacity: 0
+	cursor: pointer
+
+.button-group
+	position: relative

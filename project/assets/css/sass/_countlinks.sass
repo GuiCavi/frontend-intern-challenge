@@ -1,0 +1,34 @@
+#countlinks-section
+	padding: 70px 40px 50px
+	text-align: center
+	position: relative
+	background-color: $ch-beige
+	h2
+		font-size: 32px
+		color: $ch-red
+		font-weight: 500
+		margin-bottom: 30px
+		text-transform: uppercase
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 50%
+		border: 35px solid
+		transform: translateX(-50%)
+		border-color: white transparent transparent transparent
+	.counter
+		border-radius: 5px
+		border: 1px solid darken($ch-beige, 11%)
+		font-size: 32px
+		font-family: 'Roboto Slab'
+		background-color: #fff
+		padding: 10px 13px
+		display: inline-block
+		color: $ch-red
+		margin-bottom: 10px
+	small
+		color: $ch-grey
+		font-size: 16px
+		display: block
+		

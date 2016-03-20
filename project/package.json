@@ -1,0 +1,23 @@
+{
+  "name": "CharodicURLShortener",
+  "version": "0.0.1",
+  "description": "Frontend Intern Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Vincenzi Cavichioli",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^5.0.5",
+    "mdi": "^1.5.54"
+  }
+}

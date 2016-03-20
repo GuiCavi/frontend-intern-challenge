@@ -1,0 +1,29 @@
+#topfive-section
+	padding: 50px 40px
+	text-align: center
+	h2
+		font-size: 32px
+		color: $ch-red
+		font-weight: 500
+		margin-bottom: 30px
+		text-transform: uppercase
+
+#topfive-list
+	li
+		display: flex
+		justify-content: space-between
+		padding: 10px 0
+		&:not(:last-child)
+			border-bottom: 1px solid $ch-beige
+
+		@media(max-width: 640px)
+			flex-direction: column
+			text-align: left
+	.link
+		color: $ch-red
+		font-family: 'Roboto'
+		font-weight: 700
+	.count
+		color: $ch-grey
+
+			
